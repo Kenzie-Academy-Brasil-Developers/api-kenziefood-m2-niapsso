@@ -1,0 +1,86 @@
+.figure-logo {
+    width: 123px;
+    height: 46px;
+    margin: 21px 0px 0px 17px;
+}
+.form-search {
+    display: flex;
+    margin-left: 9px;
+    margin-top: 15.48px;
+}
+.search-product {
+    width: 343px;
+    height: 54.04px;
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 33.09px;
+    padding: 0px 0px 0px 17px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.075);
+}
+.button-search-product {
+    background-color: rgba(255, 233, 238, 1);
+    color: rgba(255, 34, 83, 1);
+    width: 44.12px;
+    height: 44.12px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px -50px;
+    cursor: pointer;
+}
+nav ul li img {
+    /* width: 16.71px; */
+    height: 16.71px;
+    margin-right: 15px;
+}
+nav {
+    margin-top: 16px;
+    margin-bottom: 27px;
+    max-width: 375px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+nav::-webkit-scrollbar {
+    display: none;
+}
+nav ul {
+    display: flex;
+    margin-left: 9px;
+}
+nav ul li {
+    margin-right: 22px;
+}
+.search-todos {
+    background-color: rgba(248, 249, 250, 1);
+    color: black;
+    border-radius: 30px;
+    border: 1.5px rgba(33, 37, 41, 1) solid;
+    padding: 11.5px 15px;
+}
+.breads {
+    background-color: rgba(255, 247, 244, 1);
+    border: none;
+    padding: 11.5px 15px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fruits {
+    background-color: rgba(255, 228, 234, 1);
+    padding: 11.5px 15px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drinks {
+    background-color: rgba(243, 238, 245, 1);
+    padding: 11.5px 15px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
