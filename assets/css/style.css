@@ -84,3 +84,74 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
+.principal-section{
+    display: flex;
+    max-width: 375px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.principal-section::-webkit-scrollbar {
+    display: none;
+}
+
+.card-principal{
+    margin-right: 23px;
+    margin-left:10px;
+}
+.principal-section div figure{
+    width:300px;
+    height:213px;
+}
+.principal-section div figure img{
+    border:3px solid #FFE9EE;
+    border-radius: 8px;
+}
+
+.panificadora {
+    position: relative;
+    top:-28px;
+    left:12px;
+    width: 107px;
+    background-color: #FFE9EE;
+    border: none;
+    padding: 6.5px 18px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space;
+    align-items: center;
+}
+
+.principal-section div h3 {
+    margin-top:15px ;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size:18px;
+}
+.principal-section .descrição{
+    margin-top:16px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 16px;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.botton-div{
+    margin-top:27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botton-div span{
+    font-weight: bold;
+    font-size:15px;
+}
+
+.botton-div button{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border: none;
+    color: #4ACA94;
+    background-color:  #E4F7EF;
+}
