@@ -3,11 +3,13 @@
     height: 46px;
     margin: 21px 0px 0px 17px;
 }
+
 .form-search {
     display: flex;
     margin-left: 9px;
     margin-top: 15.48px;
 }
+
 .search-product {
     width: 343px;
     height: 54.04px;
@@ -17,6 +19,7 @@
     padding: 0px 0px 0px 17px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.075);
 }
+
 .button-search-product {
     background-color: rgba(255, 233, 238, 1);
     color: rgba(255, 34, 83, 1);
@@ -27,11 +30,13 @@
     margin: 5px -50px;
     cursor: pointer;
 }
+
 nav ul li img {
     /* width: 16.71px; */
     height: 16.71px;
     margin-right: 15px;
 }
+
 nav {
     margin-top: 16px;
     margin-bottom: 27px;
@@ -40,16 +45,20 @@ nav {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 nav::-webkit-scrollbar {
     display: none;
 }
+
 nav ul {
     display: flex;
     margin-left: 9px;
 }
+
 nav ul li {
     margin-right: 22px;
 }
+
 .search-todos {
     background-color: rgba(248, 249, 250, 1);
     color: black;
@@ -57,6 +66,7 @@ nav ul li {
     border: 1.5px rgba(33, 37, 41, 1) solid;
     padding: 11.5px 15px;
 }
+
 .breads {
     background-color: rgba(255, 247, 244, 1);
     border: none;
@@ -66,6 +76,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
+
 .fruits {
     background-color: rgba(255, 228, 234, 1);
     padding: 11.5px 15px;
@@ -75,6 +86,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
+
 .drinks {
     background-color: rgba(243, 238, 245, 1);
     padding: 11.5px 15px;
@@ -84,34 +96,38 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
-.principal-section{
+
+.principal-section {
     display: flex;
     max-width: 375px;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 .principal-section::-webkit-scrollbar {
     display: none;
 }
 
-.card-principal{
+.card-principal {
     margin-right: 23px;
-    margin-left:10px;
+    margin-left: 10px;
 }
-.principal-section div figure{
-    width:300px;
-    height:213px;
+
+.principal-section div figure {
+    width: 300px;
+    height: 213px;
 }
-.principal-section div figure img{
-    border:3px solid #FFE9EE;
+
+.principal-section div figure img {
+    border: 3px solid #FFE9EE;
     border-radius: 8px;
 }
 
 .panificadora {
     position: relative;
-    top:-28px;
-    left:12px;
+    top: -28px;
+    left: 12px;
     width: 107px;
     background-color: #FFE9EE;
     border: none;
@@ -123,35 +139,105 @@ nav ul li {
 }
 
 .principal-section div h3 {
-    margin-top:15px ;
-    font-family: 'Inter',sans-serif;
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size:18px;
+    font-size: 18px;
 }
-.principal-section .descrição{
-    margin-top:16px;
+
+.principal-section .descrição {
+    margin-top: 16px;
     text-align: justify;
     font-size: 15px;
     line-height: 16px;
-    color:rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.botton-div{
-    margin-top:27px;
+.botton-div {
+    margin-top: 27px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.botton-div span{
+
+.botton-div span {
     font-weight: bold;
-    font-size:15px;
+    font-size: 15px;
 }
 
-.botton-div button{
-    width:35px;
-    height:35px;
+.botton-div button {
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: none;
     color: #4ACA94;
-    background-color:  #E4F7EF;
+    background-color: #E4F7EF;
+}
+
+.carrinho {
+    background-color: #FF2253;
+    width: 345px;
+    height: 60.38px;
+    border-radius: 15.0938px 15.0938px 0px 0px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 27.23px;
+    align-items: center;
+}
+
+.carrinho-p {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1px;
+    line-height: 28px;
+
+}
+
+.carrinho-add {
+    margin-top: 6.47px;
+    margin-left: 28.78px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+    width: 75.47px;
+    height: 75.47px;
+    border-radius: 8.625px;
+
+}
+
+.iconecart {
+    color: #FFFFFF;
+    margin: 0 23px;
+}
+
+.card-carrinho {
+    display: flex;
+    margin-bottom: 46.36px;
+    justify-content: space-between;
+
+}
+
+.btn-trash {
+    background: #F8F9FA;
+    border-radius: 4.3125px;
+    width: 26.95px;
+    height: 26.95px;
+    border: none;
+    color: #868E96;
+    margin-right: 16px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
