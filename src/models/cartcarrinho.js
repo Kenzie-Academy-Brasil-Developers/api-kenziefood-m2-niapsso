@@ -18,15 +18,23 @@ function interceptandoEvento(evt) {
         const idProduto = buttonComprar.parentElement.getAttribute("data-id")
         console.log(idProduto)
         adicionarCarrinho(idProduto)
+        removerCarrinho(idProduto)
+        atualizarQtdCarrinho()
     }
 
 }
-interceptandoEvento()
 
+let carrinhoCompra = []
 
 function adicionarCarrinho(idProduto) {
-    let carrinhoCompra = []
-    const produtoFiltrado = response.find((produto) => produto.id == idProduto)
-
+    const produtoFiltrado = dataProdutos.find((produto) => produto.id == idProduto)
     carrinhoCompra.push(produtoFiltrado)
 }
+
+function removerCarrinho(idProduto) {
+
+    const produtoFiltrado = carrinhoCompra.find((produto) => produto.id == idProduto)
+    const index = carrinhoCompra.indexOf(produtoFiltrado)
+    carrinhoCompra.splice(index, 1)
+}
+
