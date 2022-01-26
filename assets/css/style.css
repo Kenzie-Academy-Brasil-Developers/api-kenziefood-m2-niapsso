@@ -37,6 +37,11 @@
     cursor: pointer;
 }
 
+.button-search-product:hover{
+    background-color: #FF2253;
+    color: white;
+}
+
 nav ul li img {
     /* width: 16.71px; */
     height: 16.71px;
@@ -63,13 +68,17 @@ nav ul {
 
 nav ul li {
     margin-right: 22px;
+    border: 1.5px inset transparent;
+}
+
+nav ul li:hover {
+    border: 1.5px inset #212529;
 }
 
 .search-todos {
     background-color: rgba(248, 249, 250, 1);
     color: black;
     border-radius: 30px;
-    border: 1.5px rgba(33, 37, 41, 1) solid;
     padding: 11.5px 15px;
     font-family: "Inter", sans-serif;
     font-size: 14px;
@@ -133,6 +142,11 @@ nav ul li {
 .card-principal {
     margin-right: 23px;
     margin-left: 10px;
+}
+
+.card-principal:hover figure > img {
+    border-color: #FF2253;
+    box-shadow: 0px 0px 5px 0px #FF2253;
 }
 
 .principal-section div figure {
@@ -199,6 +213,11 @@ nav ul li {
     border: none;
     color: #4ACA94;
     background-color: #E4F7EF;
+}
+
+.btn-add:hover {
+    background-color: #4ACA94;
+    color: white;
 }
 
 .card--container{
@@ -284,6 +303,11 @@ button{
     margin-right: 10px;
 }
 
+.btn-trash:hover {
+    background-color: #868E96;
+    color: #F8F9FA;
+}
+
 aside {
     display: flex;
     flex-direction: column;
@@ -355,6 +379,21 @@ aside {
     background-color: #F8F9FA;
 }
 
+.empty-card {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #868E96;
+}
+
+.empty-card h3 {
+    font-weight: bold;
+}
+
+.empty-card p {
+    width: 212px;
+    text-align: center;
+}
+
 @media (min-width: 700px) {
 
     header{
@@ -372,6 +411,8 @@ aside {
         display: flex;
         padding: 10px 10px ;
         justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
     }
 
     nav, .principal-section {
