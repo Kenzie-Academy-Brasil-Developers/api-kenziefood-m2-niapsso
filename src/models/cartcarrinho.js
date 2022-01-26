@@ -1,3 +1,8 @@
+ import { FetchApi } from "../api/Api.js"
+
+ const response = await FetchApi.getFetchApi()
+ console.log(response);
+
 const vitrinePrincipal = document.querySelector(".principal-section")
 
 vitrinePrincipal.addEventListener("click", interceptandoEvento)
@@ -5,9 +10,13 @@ vitrinePrincipal.addEventListener("click", interceptandoEvento)
 function interceptandoEvento(evt) {
     const buttonComprar = evt.target
     if (buttonComprar.tagName === "BUTTON") {
-        const idProduto = buttonComprar.getAttribute("id")
-
-
+        const idProduto = buttonComprar.getAttribute("data-id")
+        console.log(idProduto);
+        adicionarCarrinho(idProduto)
+    }
+    if (buttonComprar.tagName === "I") {
+        const idProduto = buttonComprar.parentElement.getAttribute("data-id")
+        console.log(idProduto)
         adicionarCarrinho(idProduto)
         removerCarrinho(idProduto)
         atualizarQtdCarrinho()
@@ -28,3 +37,4 @@ function removerCarrinho(idProduto) {
     const index = carrinhoCompra.indexOf(produtoFiltrado)
     carrinhoCompra.splice(index, 1)
 }
+
