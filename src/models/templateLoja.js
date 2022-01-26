@@ -86,7 +86,7 @@ class TemplateLoja {
         <span class="total">${this.itensToBuy.length}</span>
       </div>
       <div>
-        <spam class="counter">Total</spam>
+        <span class="counter">Total</span>
         <span class="total">R$ ${this.getTotalValue().toFixed(2).replace(".", ",")}</span>
       </div>
       `
