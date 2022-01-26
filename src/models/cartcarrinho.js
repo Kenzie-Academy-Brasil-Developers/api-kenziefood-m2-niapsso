@@ -1,3 +1,5 @@
+import { FetchApi } from "../api/Api"
+
 const vitrinePrincipal = document.querySelector(".principal-section")
 
 vitrinePrincipal.addEventListener("click", interceptandoEvento)
