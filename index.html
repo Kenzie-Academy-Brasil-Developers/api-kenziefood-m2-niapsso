@@ -17,7 +17,7 @@
       <figcaption>Logo Kenzie Food</figcaption>
     </figure>
 
-    <form action="" class="form-search">
+    <form action="" class="form-search" id="formContainer">
       <input type="text" placeholder="Pesquisar por produto" class="search-product" />
       <button class="button-search-product">
         <i class="fas fa-search"></i>
@@ -27,74 +27,49 @@
 
   <main>
     <section class="nav-section">
-      <nav>
+      <nav id="navContainer">
         <ul>
           <li class="search-todos">
-            <p>Todos</p>
+            <p class="navP">Todos</p>
           </li>
           <li class="breads">
             <img src="./assets/img/Panificadora.png" alt="imagemPanificadora" class="img-bread" />
-            <p>Panificadora</p>
+            <p class="navP">Panificadora</p>
           </li>
           <li class="fruits">
             <img src="./assets/img/Frutas.png" alt="imagemFruitas" />
-            <p>Frutas</p>
+            <p class="navP">Frutas</p>
           </li>
           <li class="drinks">
             <img src="./assets/img/Bebidas.png" alt="imagemDrinks" />
-            <p>Bebidas</p>
+            <p class="navP">Bebidas</p>
           </li>
         </ul>
       </nav>
 
-
-      <section class="principal-section" id="mainSection">
+      <section class="principal-section" id="productsContainer">
+        
 
       </section>
     </section>
-  </main>
-  <aside class="card">
 
-    <div class="carrinho">
-      <i class="fas fa-cart-plus iconecart"></i>
-      <p class="carrinho-p">Carrinho</p>
-    </div>
-    <div class="carrinho-add" id="mainCarrinho">
-      
-  </aside>
+    <aside class="card">
 
+      <section class="card--container">
 
-          <div class="card-carrinho">
-            <figure>
-              <img
-                src="https://kenzie-academy-brasil.gitlab.io/fullstack/frontend/modulo2/sprint4/img/capstone-images/pizza.png"
-                alt="" class="cart">
-            </figure>
-            <div class="descricao">
-              <h3>Panqueca de banana com aveia</h3>
-              <p>Panificadora</p>
-              <span class="preço">R$ 20.00</span>
-            </div>
-            <button class="btn-trash"><i class="fas fa-trash"></i></button>
-          </div>
-
-          <div class="card-carrinho">
-            <figure>
-              <img
-                src="https://kenzie-academy-brasil.gitlab.io/fullstack/frontend/modulo2/sprint4/img/capstone-images/laranja.png"
-                alt="" class="cart">
-            </figure>
-            <div class="descricao">
-              <h3>Panqueca de banana com aveia</h3>
-              <p>Panificadora</p>
-              <span class="preço">R$ 20.00</span>
-            </div>
-            <button class="btn-trash"><i class="fas fa-trash"></i></button>
-          </div> 
-
+        <div class="carrinho">
+          <i class="fas fa-cart-plus iconecart"></i>
+          <p class="carrinho-p">Carrinho</p>
         </div>
-
+        <div class="carrinho-add" id="cartContainer">
+          <div class="empty-card">
+            <i class="fas fa-shopping-bag"></i>
+            <h3>Ops!</h3>
+            <p>Por enquanto não temos produtos no carrinho</p>
+          </div>
+        </div>
       </section>
+
 
     </aside>
 
@@ -103,7 +78,6 @@
 
   </main>
   <script src="https://kit.fontawesome.com/6f6593dd57.js" crossorigin="anonymous"></script>
-  <script type="module" src="./src/./models/cartcarrinho.js"></script>
   <script type="module" src="./src/app.js"></script>
 </body>
 

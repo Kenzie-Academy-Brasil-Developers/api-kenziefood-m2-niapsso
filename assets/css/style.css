@@ -201,6 +201,14 @@ nav ul li {
 
 }
 
+li{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
 .carrinho-add {
     display: flex;
     flex-direction: column;
@@ -262,6 +270,21 @@ aside {
     font-size: 40px;
 }
 
+.counter-shop{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+}
+
+.counter-shop div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-shop div:nth-child(odd) {
+    background-color: #F8F9FA;
+}
+
 @media (min-width: 700px) {
 
     header{
@@ -304,6 +327,7 @@ aside {
     }
 
     .carrinho-add {
+        height: 405px;
         max-height: 405px;
         overflow-y: scroll;
         -ms-overflow-style: none;
