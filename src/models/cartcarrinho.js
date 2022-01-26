@@ -9,14 +9,22 @@ function interceptandoEvento(evt) {
 
 
         adicionarCarrinho(idProduto)
+        removerCarrinho(idProduto)
         atualizarQtdCarrinho()
     }
 
 }
+
 let carrinhoCompra = []
 
 function adicionarCarrinho(idProduto) {
     const produtoFiltrado = dataProdutos.find((produto) => produto.id == idProduto)
-
     carrinhoCompra.push(produtoFiltrado)
+}
+
+function removerCarrinho(idProduto) {
+
+    const produtoFiltrado = carrinhoCompra.find((produto) => produto.id == idProduto)
+    const index = carrinhoCompra.indexOf(produtoFiltrado)
+    carrinhoCompra.splice(index, 1)
 }
