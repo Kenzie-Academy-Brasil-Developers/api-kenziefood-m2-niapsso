@@ -40,6 +40,7 @@
 .button-search-product:hover{
     background-color: #FF2253;
     color: white;
+    
 }
 
 nav ul li img {
@@ -179,6 +180,7 @@ nav ul li:hover {
     font-weight: 700;
     font-size: 16px;
     line-height: 26.67px;
+    height: 45px;
 }
 
 .principal-section .descrição {
@@ -189,6 +191,7 @@ nav ul li:hover {
     font-size: 12px;
     line-height: 16px;
     color: rgba(0, 0, 0, 0.5);
+    height: 50px;
 }
 
 .botton-div {
@@ -399,7 +402,7 @@ aside {
     header{
         display: flex;
         justify-content: space-between;
-        padding: 0 250px;
+        padding: 0 56px;
         box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.25);
     }
 
@@ -411,7 +414,7 @@ aside {
         display: flex;
         padding: 10px 10px ;
         justify-content: space-between;
-        width: 80%;
+        /* width: 80%; */
         margin: 0 auto;
     }
 
@@ -421,7 +424,7 @@ aside {
 
     .principal-section {
         flex-wrap: wrap;
-        width: 1000px;
+        width: 900px;
         max-height: 900px;
         overflow-y: scroll;
         -ms-overflow-style: none;
@@ -433,9 +436,13 @@ aside {
     }
 
     .card-principal {
-        width: 300px;
-        height: 369px;
+        width: 250px;
+        height: 420px;
+        margin-right: 20px;
         margin-top: 20px;
+    }
+    .card-principal figure > img{
+        width: 250px;
     }
 
     .carrinho-add {
