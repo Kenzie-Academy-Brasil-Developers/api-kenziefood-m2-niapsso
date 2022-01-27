@@ -128,8 +128,8 @@ class TemplateLoja {
       targetedEl.classList[1] === "fa-cart-plus"
     ) {
       const idProduct = targetedEl.dataset.id
-      const productToBuy = allProducts.find(({ id }) => id == idProduct)
-      this.itensToBuy.push(productToBuy)
+      const productToBuy = allProducts.filter(({ id }) => id == idProduct)
+      this.itensToBuy.push(...productToBuy)
       this.createTemplateCarrinho(this.itensToBuy)
     }
     if (
